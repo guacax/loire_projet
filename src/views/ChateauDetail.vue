@@ -21,8 +21,7 @@ onMounted(async () => {
 
 <template>
 	<router-link :to="{ name: 'Chateaux' }" tag="button">Accueil</router-link>
-	<div v-for="c in chateau">
-		<Card :img="c.photo" :label="c.chateau" :lePlus="c.le_plus" />
-		<p v-html="c.description"></p>
+	<div v-for="c in chateau" class="chateauOne">
+		<Card :img="c.photo" :label="c.chateau" :lePlus="c.le_plus" :desc="c.description"/>
 	</div>
 </template>
