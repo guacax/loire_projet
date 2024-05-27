@@ -23,7 +23,7 @@ header h1{
 }
 
 header img{
-	width: 10%;
+	width: 8%;
 	padding: 1% 5%;
 }
 
@@ -62,6 +62,24 @@ div.chateauxAll:hover a{
 
 div.chateauxAll img{
 	width: 80%;
+}
+
+div.chateauOne{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.chateauOne h1, div.chateauOne em{
+	display: flex;
+	justify-content: center;
+}
+
+div.chateauOne img{
+	width: 45%;
+}
+
+div.chateauOne div.desc{
+	width: 50%;
 }
 
 footer{
