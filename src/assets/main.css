@@ -69,17 +69,19 @@ div.chateauOne{
 	flex-wrap: wrap;
 }
 
-div.chateauOne h1, div.chateauOne em{
-	display: flex;
-	justify-content: center;
+div.chateauOne h2, div.chateauOne em{
+	text-align: center;
+	width: 100%;
 }
 
 div.chateauOne img{
 	width: 45%;
+	margin: 2.5%;
 }
 
 div.chateauOne div.desc{
-	width: 50%;
+	width: 45%;
+	margin: 2.5%;
 }
 
 footer{
@@ -91,4 +93,15 @@ footer{
 footer p{
 	width: 30%;
 	padding: 2%;
+}
+
+@media screen and (max-width: 900px) {
+	footer, div.chateauOne, main, header{
+		display: block;
+	}
+
+	div.chateauxAll, div.chateauOne div.desc, div.chateauOne img, div.chateauOne h2, div.chateauOne em{
+		text-align: center;
+		width: 95%;
+	}
 }

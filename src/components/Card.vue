@@ -10,10 +10,8 @@ const props = defineProps({
 </script>
 
 <template>
-	<div>
 		<h2>{{ label }}</h2>
 		<em>{{ lePlus }}</em>
 		<img :src="img" :alt="img">
 		<div class="desc" v-html="desc"></div>
-	</div>
 </template>
